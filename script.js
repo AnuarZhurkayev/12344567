@@ -1,7 +1,6 @@
 
 const likeButtons = document.querySelectorAll('.like-btn');
-likeButtons.forEach(button => {
-    button.addEventListener('click', likePost);
+
 });
 function commentPost(event) {
     const commentButton = event.target;
