@@ -1,20 +1,10 @@
-
-});
-function commentPost(event) {
-    const commentButton = event.target;
-    const post = commentButton.closest('.post');
-    const commentInput = post.querySelector('.comment-input');
-    const commentText = commentInput.value;
-    console.log('Комментирование поста:', commentText);
-    commentInput.value = ''; 
-}
-
-
-const commentInputs = document.querySelectorAll('.comment-input');
-commentInputs.forEach(input => {
-    input.addEventListener('keypress', function(event) {
-        if (event.key === 'Enter') { 
-            commentPost(event);
+document.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        const commentInput = document.querySelector('.comment-input:focus');
+        if (commentInput) {
+            const commentText = commentInput.value;
+            console.log('Комментирование поста:', commentText);
+            commentInput.value = '';
         }
-    });
+    }
 });
