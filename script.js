@@ -1,17 +1,8 @@
 
-function likePost(event) {
-   
-    let currentLikes = parseInt(likeCount.textContent);
-    likeCount.textContent = currentLikes + 1;
-}
-
-
 const likeButtons = document.querySelectorAll('.like-btn');
 likeButtons.forEach(button => {
     button.addEventListener('click', likePost);
 });
-
-
 function commentPost(event) {
     const commentButton = event.target;
     const post = commentButton.closest('.post');
