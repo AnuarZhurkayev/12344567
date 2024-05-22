@@ -38,31 +38,6 @@ main {
     margin-top: 0;
 }
 
-.actions {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.like-btn {
-    background-color: #3897f0;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.like-btn:hover {
-    background-color: #1778f2;
-}
-
-.like-count {
-    display: flex;
-    align-items: center;
-    color: #3897f0;
-}
-
 .comment-input {
     flex: 1;
     margin-left: 10px;
