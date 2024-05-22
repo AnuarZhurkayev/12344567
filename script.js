@@ -1,7 +1,6 @@
 
 function likePost(event) {
-    const likeButton = event.target;
-    const likeCount = likeButton.parentNode.querySelector('.like-count');
+   
     let currentLikes = parseInt(likeCount.textContent);
     likeCount.textContent = currentLikes + 1;
 }
